@@ -26,12 +26,13 @@ public class Kogtevran extends Hogvarts{
     public int getCreative() {
         return creative;
     }
-
-    public void compare(Hogvarts hogvarts) {
-        if (creative + witty + wise + smart > getCreative() + getWitty() + getWise() + getSmart()) {
-            System.out.println(hogvarts.getFullName() + " самый сильный на факультете Когтевран");
+    public static void studentCompareKogtevran(Kogtevran student1, Kogtevran student2) {
+        int sum1 = student1.getSmart() + student1.getWise() + student1.getWitty() + student1.getCreative();
+        int sum2 = student2.getSmart() + student2.getWise() + student2.getWitty() + student2.getCreative();
+        if (sum1 > sum2) {
+            System.out.println(student1.getFullName() + " самый сильный на факультете Когтевран ");
         } else {
-            System.out.println(" самый сильный на факультете Когтевран " + hogvarts.getFullName());
+            System.out.println(" самый сильный на факультете Когтевран " + student2.getFullName());
         }
     }
 
