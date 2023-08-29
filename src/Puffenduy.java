@@ -21,13 +21,13 @@ public class Puffenduy extends Hogvarts {
         return honesty;
     }
 
-    public static void studentComparePuffenduy(Puffenduy student1, Puffenduy student2) {
-        int sum1 = student1.getIndustriouness() + student1.getLoyalty() + student1.getHonesty();
-        int sum2 = student2.getIndustriouness() + student2.getLoyalty() + student2.getHonesty();
+    public void studentComparePuffenduy(Puffenduy student) {
+        int sum1 = this.getIndustriouness() + this.getLoyalty() + this.getHonesty();
+        int sum2 = student.getIndustriouness() + student.getLoyalty() + student.getHonesty();
         if (sum1 > sum2) {
-            System.out.println(student1.getFullName() + " самый сильный на факультете Пуффендуй");
+            System.out.println(this.getFullName() + " самый сильный на факультете Пуффендуй");
         } else {
-            System.out.println(" самый сильный на факультете Пуффендуй " + student2.getFullName());
+            System.out.println(" самый сильный на факультете Пуффендуй " + student.getFullName());
         }
     }
 

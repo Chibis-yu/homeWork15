@@ -34,13 +34,13 @@ public class Slizerine extends Hogvarts {
         this.lustForPower = lustForPower;
     }
 
-    public static void studentCompareSlizerine(Slizerine student1, Slizerine student2) {
-        int sum1 = student1.getCunning() + student1.getDetermination() + student1.getAmbition() + student1.getResourcefulness() + student1.getLustForPower();
-        int sum2 = student2.getCunning() + student2.getDetermination() + student2.getAmbition() + student2.getResourcefulness() + student2.getLustForPower();
+    public void studentCompareSlizerine(Slizerine student) {
+        int sum1 = this.getCunning() + this.getDetermination() + this.getAmbition() + this.getResourcefulness() + this.getLustForPower();
+        int sum2 = student.getCunning() + student.getDetermination() + student.getAmbition() + student.getResourcefulness() + student.getLustForPower();
         if (sum1 > sum2) {
-            System.out.println(student1.getFullName() + " самый сильный на факультете Слизерине ");
+            System.out.println(this.getFullName() + " самый сильный на факультете Слизерине ");
         } else {
-            System.out.println(" самый сильный на факультете Слизерине " + student2.getFullName());
+            System.out.println(" самый сильный на факультете Слизерине " + student.getFullName());
         }
     }
 

@@ -21,11 +21,12 @@ public class Main {
         Kogtevran marcusBelby = new Kogtevran("Маркус Белби", 85, 86, 87, 88, 89, 90);
 
 
-        harryPotter.studentCompareHogvarts(drakoMalfoy, harryPotter);
-        chzhouChang.studentCompareHogvarts(chzhouChang, sedrikDiggory);
-        harryPotter.studentCompareGriffindor(ronUizli, harryPotter);
-        grakhenMontegyu.studentCompareSlizerine(grakhenMontegyu, gregoryGoyl);
-        zakhariyaSmit.studentComparePuffenduy(zakhariyaSmit, dzhastinFinchFletchly);
-        padmaPatil.studentCompareKogtevran(padmaPatil, marcusBelby);
+        harryPotter.studentCompareHogvarts(drakoMalfoy);
+        chzhouChang.studentCompareHogvarts(sedrikDiggory);
+        harryPotter.studentCompareGriffindor(ronUizli);
+        germionaGreyndzher.studentCompareGriffindor(ronUizli);
+        grakhenMontegyu.studentCompareSlizerine(gregoryGoyl);
+        zakhariyaSmit.studentComparePuffenduy(dzhastinFinchFletchly);
+        padmaPatil.studentCompareKogtevran(marcusBelby);
     }
 }

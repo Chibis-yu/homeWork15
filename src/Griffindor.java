@@ -1,4 +1,4 @@
-public class Griffindor<student2> extends Hogvarts {
+public class Griffindor extends Hogvarts {
     private int nobility;
     private int honor;
     private int bravery;
@@ -22,13 +22,13 @@ public class Griffindor<student2> extends Hogvarts {
         this.bravery = bravery;
     }
 
-    public static void studentCompareGriffindor(Griffindor student1, Griffindor student2) {
-        int sum1 = student1.getNobility() + student1.getHonor() + student1.getBravery();
-        int sum2 = student2.getNobility() + student2.getHonor() + student2.getBravery();
+    public void studentCompareGriffindor(Griffindor student) {
+        int sum1 = this.getNobility() + this.getHonor() + this.getBravery();
+        int sum2 = student.getNobility() + student.getHonor() + student.getBravery();
         if (sum1 > sum2) {
-            System.out.println(student1.getFullName() + " самый сильный на факультете Гриффиндор");
+            System.out.println(this.getFullName() + " самый сильный на факультете Гриффиндор");
         } else {
-            System.out.println(" самый сильный на факультете Гриффиндор " + student2.getFullName());
+            System.out.println(" самый сильный на факультете Гриффиндор " + student.getFullName());
         }
     }
 

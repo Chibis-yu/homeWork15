@@ -20,13 +20,13 @@ public class Hogvarts {
     public int getDistanceMagic() {
         return distanceMagic;
     }
-    public static void studentCompareHogvarts(Hogvarts student1, Hogvarts student2) {
-        int sum1 = student1.getMagic() + student1.getDistanceMagic();
-        int sum2 = student2.getMagic() + student2.getDistanceMagic();
+    public void studentCompareHogvarts(Hogvarts student) {
+        int sum1 = this.getMagic() + this.getDistanceMagic();
+        int sum2 = student.getMagic() + student.getDistanceMagic();
         if (sum1 > sum2) {
-            System.out.println(student1.getFullName() + " самый сильный в Университете Хогвартс ");
+            System.out.println(this.getFullName() + " самый сильный в Университете Хогвартс ");
         } else {
-            System.out.println(" самый сильный в Университете Хогвартс " + student2.getFullName());
+            System.out.println(" самый сильный в Университете Хогвартс " + student.getFullName());
         }
     }
 
